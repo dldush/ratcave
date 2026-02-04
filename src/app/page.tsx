@@ -13,10 +13,7 @@ export default function Home() {
       <header className="flex flex-col items-center border-b-4 border-ink-900 pb-4 mb-4 relative">
         <div className="w-full flex justify-between items-center border-b border-ink-900 mb-2 py-1 text-xs uppercase tracking-widest font-bold">
           <span>Vol. I</span>
-          <div className="flex items-center gap-2">
-            <span>Owl Post</span>
-            <ThemeToggle />
-          </div>
+          <ThemeToggle />
         </div>
         <h1 className="text-6xl md:text-8xl font-display font-black tracking-tighter text-center uppercase leading-none mb-2">
           The Ratcave

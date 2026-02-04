@@ -19,7 +19,7 @@ export function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      className="p-1 border border-ink-900 rounded-full hover:bg-ink-900 hover:text-paper transition-colors flex items-center justify-center w-6 h-6 ml-2"
+      className="p-1 border border-ink-900 rounded-full hover:bg-ink-900 hover:text-paper transition-colors flex items-center justify-center w-6 h-6"
       title="Toggle Magic (Dark Mode)"
     >
       {theme === "light" ? (
