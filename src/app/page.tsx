@@ -12,14 +12,14 @@ export default function Home() {
       {/* Header Section */}
       <header className="flex flex-col items-center border-b-4 border-ink-900 pb-4 mb-4 relative">
         <div className="w-full flex justify-between items-center border-b border-ink-900 mb-2 py-1 text-xs uppercase tracking-widest font-bold">
-          <span>Vol. I</span>
+          <span>ARCHIVE 0</span>
           <ThemeToggle />
         </div>
-        <h1 className="text-6xl md:text-8xl font-display font-black tracking-tighter text-center uppercase leading-none mb-2">
-          The Ratcave
+        <h1 className="text-5xl md:text-8xl font-display font-black tracking-tighter text-center uppercase leading-none mb-2">
+          Ratcave: Archive 0
         </h1>
         <div className="w-full border-t border-b border-ink-900 py-1 text-center font-bold uppercase tracking-widest text-sm">
-          {today}
+          {today} • SYSTEM ONLINE
         </div>
       </header>
 
@@ -29,7 +29,7 @@ export default function Home() {
           <Link href={`/blog/${posts[0].slug}`} className="group">
             <div className="relative border border-ink-900 p-2 bg-paper transition-transform group-hover:scale-[1.01] duration-500 ease-out">
               <div className="absolute top-0 left-0 bg-ink-900 text-paper px-2 py-1 text-xs font-bold uppercase z-10">
-                Breaking News
+                INCOMING SIGNAL
               </div>
               <div className="h-64 bg-ink-200 w-full mb-4 overflow-hidden relative">
                 {posts[0].meta.image ? (

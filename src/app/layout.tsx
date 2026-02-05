@@ -15,8 +15,8 @@ const merriweather = Merriweather({
 });
 
 export const metadata = {
-  title: "FE를 여행하는 히치하이커를 위한 안내서",
-  description: "A magical developer blog.",
+  title: "Ratcave: Archive 0",
+  description: "System Status: ONLINE. Broadcasting from the ruins of the legacy web. Tactical intelligence, encrypted signals, and forbidden tech protocols.",
 };
 
 export default function RootLayout({
