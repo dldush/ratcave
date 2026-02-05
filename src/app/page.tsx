@@ -19,7 +19,7 @@ export default function Home() {
           Ratcave: Archive 0
         </h1>
         <div className="w-full border-t border-b border-ink-900 py-1 text-center font-bold uppercase tracking-widest text-sm">
-          {today} • SYSTEM ONLINE
+          {today} • <span className="glitch text-red-600 dark:text-red-400" data-text="SYSTEM ONLINE">SYSTEM ONLINE</span>
         </div>
       </header>
 
