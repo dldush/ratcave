@@ -31,11 +31,21 @@ export default function Home() {
               <div className="absolute top-0 left-0 bg-ink-900 text-paper px-2 py-1 text-xs font-bold uppercase z-10">
                 Breaking News
               </div>
-              <div className="h-64 bg-ink-200 w-full mb-4 overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-700">
-                {/* Placeholder for "Moving Image" */}
-                <div className="w-full h-full flex items-center justify-center text-ink-500 font-display italic text-2xl">
-                  [ Moving Image Spell Cast Here ]
-                </div>
+              <div className="h-64 bg-ink-200 w-full mb-4 overflow-hidden relative">
+                {posts[0].meta.image ? (
+                  <>
+                    <img 
+                      src={posts[0].meta.image} 
+                      alt={posts[0].meta.title}
+                      className="w-full h-full object-cover grayscale contrast-125 brightness-90 group-hover:grayscale-0 group-hover:contrast-100 group-hover:brightness-100 group-hover:scale-105 transition-all duration-700 ease-in-out"
+                    />
+                    <div className="absolute inset-0 pointer-events-none opacity-20 mix-blend-overlay bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZmlsdGVyIGlkPSJnoiPjxmZVR1cmJ1bGVuY2UgdHlwZT0iZnJhY3RhbE5vaXNlIiBiYXNlRnJlcXVlbmN5PSIwLjY1IiBudW1PY3RhdmVzPSIzIiBzdGl0Y2hUaWxlcz0ic3RpdGNoIi8+PC9maWx0ZXI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsdGVyPSJ1cmwoI2cpIiBvcGFjaXR5PSIwLjUiLz48L3N2Zz4=')]"></div>
+                  </>
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center text-ink-500 font-display italic text-2xl">
+                    [ No Image ]
+                  </div>
+                )}
               </div>
               <h2 className="text-4xl font-display font-bold mb-2 group-hover:underline decoration-2 underline-offset-4">
                 {posts[0].meta.title}
