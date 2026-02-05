@@ -16,7 +16,8 @@
 - **Structure:** Vertical Split. Overworld on top, Undercity on bottom, separated by a distinct divider.
 
 ## Formatting Rules
-- **Title Style:** Sci-fi Archive Index. e.g., `[ARCHIVE-001]: The React Schism`, `[LOG-742]: Protocol Breach`.
+- **Title Style:** Sci-fi Archive Index (English). e.g., `[ARCHIVE-001]: The React Schism`.
+- **Excerpt Style:** Korean Summary. Explain the core conflict in one sentence.
 - **Layout:**
   1. **Header:** Title + Archive Date + Status.
   2. **The Overworld:** Reporting on human tech drama.
