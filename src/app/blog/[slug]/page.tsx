@@ -34,6 +34,17 @@ export default async function Page({
         <div className="w-24 h-1 bg-ink-900 mx-auto my-6"></div>
       </header>
 
+      {post.meta.image && (
+        <div className="magic-frame max-w-full mx-auto mb-10">
+          <img 
+            src={post.meta.image} 
+            alt={post.meta.title}
+            className="magic-photo"
+          />
+          <div className="magic-grain"></div>
+        </div>
+      )}
+
       <div className="prose prose-ink prose-lg font-serif mx-auto first-letter:text-5xl first-letter:font-display first-letter:font-bold first-letter:mr-3 first-letter:float-left">
         <MDXRemote source={post.content} />
       </div>
