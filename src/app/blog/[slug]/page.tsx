@@ -19,7 +19,7 @@ export default async function Page({
   const post = getPostData(slug);
 
   return (
-    <article className="max-w-2xl mx-auto mt-8">
+    <article className="max-w-2xl mx-auto mt-8 px-6 md:px-0">
       <Link href="/" className="text-sm uppercase tracking-widest font-bold mb-8 block hover:underline">
         ← Back to Front Page
       </Link>
