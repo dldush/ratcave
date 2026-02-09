@@ -2,6 +2,7 @@ import { getPostData, getSortedPostsData } from "@/lib/posts";
 import { format, parseISO } from "date-fns";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
+import { GraffitiWall } from "@/components/graffiti-wall";
 
 export async function generateStaticParams() {
   const posts = getSortedPostsData();
@@ -48,6 +49,8 @@ export default async function Page({
       <div className="prose prose-ink prose-lg font-serif mx-auto first-letter:text-5xl first-letter:font-display first-letter:font-bold first-letter:mr-3 first-letter:float-left">
         <MDXRemote source={post.content} />
       </div>
+
+      <GraffitiWall slug={slug} />
     </article>
   );
 }
